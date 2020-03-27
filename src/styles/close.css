@@ -16,7 +16,7 @@
 
   &::before,
   &::after {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--white);
     content: '';
     height: 1.2rem;
     position: absolute;
@@ -35,7 +35,7 @@
   &:focus {
     &::before,
     &::after {
-      background-color: rgba(0, 0, 0, 1);
+      background-color: var(--white);
     }
   }
 
@@ -48,6 +48,6 @@
   &::before,
   &::after {
     height: 2rem;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--white);
    }
 }

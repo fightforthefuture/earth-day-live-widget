@@ -45,15 +45,17 @@
   text-align: center;
 }
 
-.edl-footer__link {
+.edl-link {
   text-decoration: underline;
+  color: var(--white);
 }
 
-.edl-footer__link:hover {
+.edl-link:hover {
   cursor: pointer;
 }
 
 .edl-footer__icon {
+  vertical-align: middle;
   max-width: 2rem;
 }
 
@@ -78,7 +80,7 @@
   }
 
   .edl-footer__body {
-    font-size: 2rem;
+    font-size: 1.75rem;
     line-height: 2.75rem;
     max-width: none;
   }

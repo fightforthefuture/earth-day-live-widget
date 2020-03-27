@@ -4,7 +4,7 @@ On April 22-24, the 50th anniversary of Earth Day, millions of people around the
 
 The event is named Earth Day Live, and this is the source code for Earth Day Live's widget that will allow anyone with a website to join the event in solidarity. [Click here to learn more.](https://earthdaylive2020.org)
 
-This project was based on the [Digital Climate Strike widget](https://github.com/fightforthefuture/digital-climate-strike), which was used to black out thousands of websites last September, in support of what became the largest climate strike ever.
+This project was based on the [Digital Climate Strike widget](https://github.com/fightforthefuture/digital-climate-strike), which was used to black out thousands of websites last September, in support of what became the largest climate strike ever. Read about the results of the Digital Climate Strike [here](https://digital.globalclimatestrike.net/thanks/).
 
 ## How to install the widget on your site
 

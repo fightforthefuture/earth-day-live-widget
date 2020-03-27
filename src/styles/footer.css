@@ -57,6 +57,7 @@
 .edl-footer__icon {
   vertical-align: middle;
   max-width: 1rem;
+  padding-bottom: 5px;
 }
 
 .edl-footer__icon:hover {

@@ -15,6 +15,18 @@
   text-align: center;
 }
 
+.edl-full-page.show-close-button::after {
+  content: "";
+  background: url('images/earth-day-live-gradient.jpg') no-repeat center center fixed;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .edl-full-page__container {
   max-width: 40rem;
 }

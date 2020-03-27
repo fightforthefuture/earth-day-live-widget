@@ -56,7 +56,8 @@ function maximize() {
 
 function showCloseButtonOnFullPageWidget() {
   const fullPageWidget = document.querySelector('.edl-full-page')
-  fullPageWidget.style.background = 'rgba(78,229,139, 0.8)'
+  fullPageWidget.style.background = 'none'
+  fullPageWidget.classList.add('show-close-button')
 
   const fullPageCloseButton = document.querySelector('.edl-full-page__close')
   fullPageCloseButton.style.display = 'flex'

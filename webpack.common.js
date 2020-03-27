@@ -1,5 +1,5 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const cloneDeep = require('lodash/cloneDeep')
@@ -44,7 +44,8 @@ function HandlebarsPlugin(options) {
 
 HandlebarsPlugin.prototype.apply = function(compiler) {
   compiler.hooks.compilation.tap('HandlebarsPlugin', function (compilation) {
-    compilation.hooks.htmlWebpackPluginBeforeHtmlProcessing.tapAsync('HandlebarsPlugin', function (data, callback) {
+    const hooks = HtmlWebpackPlugin.getHooks(compilation);
+    hooks.afterTemplateExecution.tapAsync('HandlebarsPlugin', function(data, callback) {
       const template = handlebars.compile(data.html)
       const strings = loadStrings(data.plugin.options.language)
       data.html = template(strings)
@@ -74,17 +75,6 @@ module.exports = {
           }
         },
       }, {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-            options: {
-              minimize: true
-            }
-          }
-        ]
-      },
-      {
         test: /\.css$/,
         use: [
           {
@@ -103,12 +93,11 @@ module.exports = {
             },
           },
         ],
-      },
-      {
+      }, {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'file-loader'
           },
         ]
       }, {
@@ -122,59 +111,69 @@ module.exports = {
             }
           }
         ]
+      }, {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: true
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'en'
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'es',
       filename: 'index-es.html'
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'de',
       filename: 'index-de.html'
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'cs',
       filename: 'index-cs.html'
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'fr',
       filename: 'index-fr.html'
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'nl',
       filename: 'index-nl.html'
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'tr',
       filename: 'index-tr.html'
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'pt',
       filename: 'index-pt.html'
     }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
       template: './src/index.html',
       inlineSource: '.(js|css)$',
       language: 'it',

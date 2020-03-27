@@ -7,7 +7,7 @@
 
   // user-configurable options
   var options = window.EARTH_DAY_LIVE_OPTIONS || {};
-  var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://assets.earthdaylive2020.org';
+  var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.earthdaylive2020.org';
   var websiteName = options.websiteName || null;
   var footerDisplayStartDate = options.footerDisplayStartDate || new Date(2020, 1, 1);       // January 1st, 2020 - arbitrary date in the past
   var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 4, 22);  // April 22nd, 2020
@@ -189,7 +189,7 @@
 
     var iFrameHeight = getIframeHeight();
 
-    injectCSS('DIGITAL_STRIKE_CSS',
+    injectCSS('EARTH_DAY_LIVE_CSS',
       '#' + DOM_ID + ' { position: fixed; right: 0; left: 0; bottom: 0px; width: 100%; height: ' + iFrameHeight + '; z-index: 20000; -webkit-overflow-scrolling: touch; overflow: hidden; } ' +
       '#' + DOM_ID + ' iframe { width: 100%; height: 100%; }'
     );

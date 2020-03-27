@@ -1,3 +1,8 @@
+
+/* fonts */
+@import './styles/fonts.css';
+
+/* globals */
 @import './styles/global.css';
 
 /* Components */

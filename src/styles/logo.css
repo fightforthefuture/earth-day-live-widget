@@ -1,19 +1,19 @@
 /* logo.css */
 
-.edl-logo {
-  max-height: 5rem;
-}
+/*.edl-logo {*/
+/*  max-height: 5rem;*/
+/*}*/
 
-.edl-logo--med {
-  max-height: 10rem;
-}
+/*.edl-logo--med {*/
+/*  max-height: 10rem;*/
+/*}*/
 
-@media(min-width: 900px) {
-  .edl-logo {
-    max-height: 2.8rem;
-  }
+/*@media(min-width: 900px) {*/
+/*  .edl-logo {*/
+/*    max-height: 2.8rem;*/
+/*  }*/
 
-  .edl-logo--med {
-    max-height: 10rem;
-  }
-}
+/*  .edl-logo--med {*/
+/*    max-height: 10rem;*/
+/*  }*/
+/*}*/

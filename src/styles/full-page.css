@@ -2,9 +2,9 @@
 
 .edl-full-page {
   align-items: center;
-  background-color: var(--green);
+  background: url('images/earth-day-live-gradient.jpg') no-repeat center center fixed;
   bottom: 0;
-  color: var(--grey);
+  color: var(--white);
   display: none;
   justify-content: center;
   left: 0;
@@ -13,6 +13,18 @@
   top: 0;
   width: 100%;
   text-align: center;
+}
+
+.edl-full-page.show-close-button::after {
+  content: "";
+  background: url('images/earth-day-live-gradient.jpg') no-repeat center center fixed;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .edl-full-page__container {
@@ -34,7 +46,7 @@
 
 .edl-full-page__logo {
   margin: 0 auto;
-  width: 5.7rem;
+  width: 12rem;
   display: block;
 }
 
@@ -43,16 +55,13 @@
 }
 
 .edl-full-page__body p {
-  font: normal 3.2rem/3.5rem 'Greve';
+  font: normal 2.2rem/3rem titling-gothic-fb, sans-serif;
 }
 
-.edl-full-page__action {
-  margin: 1.25rem auto 0;
-}
 
 .edl-full-page__footer {
   bottom: 0;
-  font: 400 10px/13px 'Katwijk Bold', monospace;
+  font: 400 20px/20px neue-haas-grotesk-display, sans-serif;
   left: 0;
   position: absolute;
   right: 0;
@@ -69,15 +78,25 @@
   display: none;
 }
 
+.edl-page__icon {
+  max-width: 30px;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
 @media (min-width: 900px) {
   .edl-full-page__footer {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     line-height: 1.4;
+  }
+
+  .edl-full-page__logo {
+    width: 14rem;
   }
 }
 
 @media (max-height: 600px) {
   .edl-full-page__body p {
-    font: normal 2.2rem/2.5rem 'Greve';
+    font: normal 2.2rem/2.5rem titling-gothic-fb, sans-serif;
   }
 }

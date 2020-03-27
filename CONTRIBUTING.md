@@ -32,7 +32,7 @@ $ npm run lint
 
 ## Automated Deploys
 
-[TravisCI](https://travis-ci.com/fightforthefuture/earth-day-live-widget/branches) is set up to build the widget and upload it to Google Cloud Storage on every commit to the master branch.
+NOT YET SET UP: [TravisCI](https://travis-ci.com/fightforthefuture/earth-day-live-widget/branches) is set up to build the widget and upload it to Google Cloud Storage on every commit to the master branch.
 
 ## Development Docker container
 
@@ -40,17 +40,17 @@ If you don't have (or don't want to use) a NodeJS environment available locally,
 
 Follow these steps:
 
-1. Install `docker` tool using [instruction for you platform](https://docs.docker.com/install/)
+1. Install `docker` tool using [instruction for your platform](https://docs.docker.com/install/)
 2. Go to the project directory and start the container using `docker-compose up` command. The first start will be slower, because the container has to be built.
 3. See built project at [http://127.0.0.1:8080](http://127.0.0.1:8080)
 
 You can modify settings by editing `docker-compose.yml` file. The container needs to be rebuilt afterwards
 
-## Localization
+## Localization (NOT YET SET UP)
 
 The widget can be localized, including the date format. Following changes are needed:
 
-- `src/index.js`: constants `LOCALE_CODE_MAPPING` and `GLOBAL_CLIMATE_STRIKE_URLS` (only if there's relevant language version of https://globalclimatestrike.net/ site) need to be adjusted. For language codes, please refer to https://gist.github.com/wpsmith/7604842
+- `src/index.js`: constants `LOCALE_CODE_MAPPING` and `EARTH_DAY_LIVE_URLS` (only if there's relevant language version of https://earthdaylive2020.org/ site) need to be adjusted. For language codes, please refer to https://gist.github.com/wpsmith/7604842
 - `webpack.common.js`: edit `plugins` array and add a new HtmlWebPackPlugin instance based on your language code
 - copy file `src/translations/en.yml` to `src/translations/<your-code>.yml` and translate it
 - `static/widget.js`: edit `getLanguage()` function to add default language resolution for your langcode

@@ -56,7 +56,8 @@ function maximize() {
 
 function showCloseButtonOnFullPageWidget() {
   const fullPageWidget = document.querySelector('.edl-full-page')
-  fullPageWidget.style.background = 'rgba(78,229,139, 0.8)'
+  fullPageWidget.style.background = 'none'
+  fullPageWidget.classList.add('show-close-button')
 
   const fullPageCloseButton = document.querySelector('.edl-full-page__close')
   fullPageCloseButton.style.display = 'flex'
@@ -145,9 +146,9 @@ function initGoogleAnalytics() {
 }
 
 function addTrackingEvents(hostname, forceFullPageWidget) {
-  attachEvent('.edl-footer .edl-button', 'click', () => trackEvent('footer-join-button', 'click', hostname))
+  attachEvent('.edl-footer .edl-link', 'click', () => trackEvent('footer-join-button', 'click', hostname))
   attachEvent('.edl-footer .edl-close', 'click', () => trackEvent('footer-close-button', 'click', hostname))
-  attachEvent('.edl-full-page .edl-button', 'click', () => trackEvent('full-page-join-button', 'click', hostname))
+  attachEvent('.edl-full-page .edl-link', 'click', () => trackEvent('full-page-join-button', 'click', hostname))
   attachEvent('.edl-full-page .edl-close', 'click', () => trackEvent('full-page-close-button', 'click', hostname))
 
   if (forceFullPageWidget) {
@@ -195,12 +196,15 @@ function initializeInterface() {
 
   joinUrls = isFullPage ? EARTH_DAY_LIVE_FULL_PAGE_URLS : EARTH_DAY_LIVE_URLS
 
-  setEarthDayLiveLinkUrl('.edl-footer .edl-button')
+  setEarthDayLiveLinkUrl('.edl-footer .edl-link')
+  setEarthDayLiveLinkUrl('.edl-footer .edl-link__icon')
   setEarthDayLiveLinkUrl('.edl-footer__logo')
-  setEarthDayLiveLinkUrl('.edl-full-page .edl-button')
+  setEarthDayLiveLinkUrl('.edl-full-page .edl-link')
+  setEarthDayLiveLinkUrl('.edl-full-page .edl-link__icon')
   setEarthDayLiveLinkUrl('.edl-full-page__logo')
   attachEvent('.edl-close', 'click', handleCloseButtonClick)
-  attachEvent('.edl-button', 'click', handleJoinEDLButtonClick)
+  attachEvent('.edl-link', 'click', handleJoinEDLButtonClick)
+  attachEvent('.edl-link__icon', 'click', handleJoinEDLButtonClick)
   attachEvent('.edl-footer__logo', 'click', handleJoinEDLButtonClick)
   attachEvent('.edl-full-page__logo', 'click', handleJoinEDLButtonClick)
 

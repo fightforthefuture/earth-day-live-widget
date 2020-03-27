@@ -7,11 +7,11 @@ full_page:
       is<br />
       joining Earth<br />
       Day Live today.<br />
-      Will you?'
+      <span class="edl-full-page__link">Will you?</span>'
   ready:  'I&rsquo;m ready ➔'
   footer: 'You’ll be able to access this website tomorrow, <time id="edl-tomorrow-date" datetime="2019-09-21">September 21</time>.'
 footer:
-  body: 'Our website will join Earth Day Live on <time id="edl-strike-date" datetime="2019-09-20">September 20</time>. Will you?'
+  body: 'Our website will join Earth Day Live on <time id="edl-strike-date" datetime="2020-04-22">April 22</time>. <span class="edl-footer__link">Will you?</span>'
   ready: 'Yes, I&rsquo;m in. ➔'
 
 title: 'Earth Day Live'

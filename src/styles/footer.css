@@ -1,12 +1,12 @@
 /* footer */
 
 .edl-footer {
-  background-color: var(--green);
+  background: url('images/earth-day-live-gradient.jpg') no-repeat center center fixed;
   bottom: 0;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
-  font-family: 'Katwijk Bold';
+  font-family: titling-gothic-fb, sans-serif;
   left: 0;
-  padding: 1.25rem 1.25rem 2rem;
+  padding: 1.25rem 1.25rem;
   position: fixed;
   right: 0;
   width: 100%;
@@ -39,29 +39,37 @@
 }
 
 .edl-footer__body {
-  color: var(--grey);
-  font: normal .875rem/1rem 'Katwijk Bold', Courier, sans-serif;
+  color: var(--white);
+  font: normal .875rem/1rem titling-gothic-fb, sans-serif;
   max-width: 26rem;
+  text-align: center;
 }
 
-.edl-footer__action {
-  margin: 1rem 0 0;
+.edl-footer__link {
+  text-decoration: underline;
 }
 
+.edl-footer__link:hover {
+  cursor: pointer;
+}
+
+.edl-footer__icon {
+  max-width: 2rem;
+}
+
+.edl-footer__icon:hover {
+  cursor: pointer;
+}
 /* Breakpoint */
 
 @media(min-width: 900px) {
-
-  .edl-footer {
-    padding: 2rem;
-  }
 
   .edl-footer__container {
     max-width: 60rem;
   }
 
   .edl-footer__logo {
-    flex: 0 0 10%;
+    flex: 0 0 20%;
   }
 
   .edl-footer__main {
@@ -70,14 +78,9 @@
   }
 
   .edl-footer__body {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.75rem;
     max-width: none;
-  }
-
-  .edl-footer__action {
-    display: inline-block;
-    margin: 0 0 0 1rem;
   }
 }
 

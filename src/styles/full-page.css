@@ -46,7 +46,7 @@
 
 .edl-full-page__logo {
   margin: 0 auto;
-  width: 18rem;
+  width: 12rem;
   display: block;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .edl-full-page__body p {
-  font: normal 3.2rem/5rem titling-gothic-fb, sans-serif;
+  font: normal 2.2rem/3rem titling-gothic-fb, sans-serif;
 }
 
 
@@ -87,6 +87,10 @@
   .edl-full-page__footer {
     font-size: 1.2rem;
     line-height: 1.4;
+  }
+
+  .edl-full-page__logo {
+    width: 14rem;
   }
 }
 

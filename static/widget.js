@@ -189,7 +189,7 @@
 
     var iFrameHeight = getIframeHeight();
 
-    injectCSS('DIGITAL_STRIKE_CSS',
+    injectCSS('EARTH_DAY_LIVE_CSS',
       '#' + DOM_ID + ' { position: fixed; right: 0; left: 0; bottom: 0px; width: 100%; height: ' + iFrameHeight + '; z-index: 20000; -webkit-overflow-scrolling: touch; overflow: hidden; } ' +
       '#' + DOM_ID + ' iframe { width: 100%; height: 100%; }'
     );

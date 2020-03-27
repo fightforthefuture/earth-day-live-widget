@@ -7,7 +7,7 @@
 
   // user-configurable options
   var options = window.EARTH_DAY_LIVE_OPTIONS || {};
-  var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://assets.earthdaylive2020.org';
+  var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.earthdaylive2020.org';
   var websiteName = options.websiteName || null;
   var footerDisplayStartDate = options.footerDisplayStartDate || new Date(2020, 1, 1);       // January 1st, 2020 - arbitrary date in the past
   var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 4, 22);  // April 22nd, 2020

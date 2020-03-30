@@ -69,17 +69,6 @@ function showCloseButtonOnFullPageWidget() {
   fullPageFooter.style.display = 'none'
 }
 
-function handleCustomWebsiteName(websiteName) {
-  const websiteNameDefault = document.querySelector('.edl-website-name__default')
-  websiteNameDefault.style.display = 'none'
-
-  const websiteNamePrefix = document.querySelector('.edl-website-name__prefix')
-  websiteNamePrefix.style.display = 'inline-block'
-
-  const websiteNameText = document.querySelector('.edl-website-name')
-  websiteNameText.innerHTML = decodeURI(websiteName)
-}
-
 function isTruthy(str) {
   return typeof(str) === 'undefined' || `${str}` === 'true' || `${str}` === '1'
 }
@@ -212,10 +201,6 @@ function initializeInterface() {
 
   if (query.showCloseButtonOnFullPageWidget) {
     showCloseButtonOnFullPageWidget()
-  }
-
-  if (query.websiteName) {
-    handleCustomWebsiteName(query.websiteName)
   }
 
   if (isTruthy(query.googleAnalytics) && !navigator.doNotTrack) {

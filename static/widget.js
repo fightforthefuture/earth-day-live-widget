@@ -9,8 +9,8 @@
   var options = window.EARTH_DAY_LIVE_OPTIONS || {};
   var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.earthdaylive2020.org';
   var websiteName = options.websiteName || null;
-  var footerDisplayStartDate = options.footerDisplayStartDate || new Date(2020, 1, 1);       // January 1st, 2020 - arbitrary date in the past
-  var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 4, 22);  // April 22nd, 2020
+  var footerDisplayStartDate = options.footerDisplayStartDate || new Date(2019, 12, 1);       // January 1st, 2020 - arbitrary date in the past
+  var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 3, 22);  // April 22nd, 2020
   var forceFullPageWidget = !!options.forceFullPageWidget;
   var cookieExpirationDays = parseFloat(options.cookieExpirationDays || 1);
   var alwaysShowWidget = !!(options.alwaysShowWidget || window.location.hash.indexOf('ALWAYS_SHOW_EARTH_DAY_LIVE') !== -1);

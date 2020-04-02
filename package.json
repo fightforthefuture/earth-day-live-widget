@@ -1,5 +1,6 @@
 {
   "name": "earth-day-live-widget",
+  "private": true,
   "version": "1.0.0",
   "description": "Earth Day Live widget so anyone can join the Earth Day livestream",
   "main": "index.js",

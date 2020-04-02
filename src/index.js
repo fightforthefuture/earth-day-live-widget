@@ -129,7 +129,7 @@ function initGoogleAnalytics() {
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga')
 
   if (typeof window.ga !== 'undefined') {
-    window.ga('create', 'UA-145982710-1', 'auto')
+    window.ga('create', 'UA-162257314-2', 'auto')
     window.ga('send', 'pageview')
   }
 }

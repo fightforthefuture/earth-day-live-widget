@@ -5,7 +5,7 @@ const GOOGLE_ANALYTICS_DELAY_MS = 30
 
 const EARTH_DAY_LIVE_URLS = {
   en: 'https://www.earthdaylive2020.org/?source=earthdaylivebanner',
-  // es: 'https://es.globalclimatestrike.net/?source=digitalstrikebanner',
+  es: 'https://www.earthdaylive2020.org/es/?source=earthdaylivebanner',
   // de: 'https://de.globalclimatestrike.net/?source=digitalstrikebanner',
   // cs: 'https://www.tydenproklima.cz',
   // fr: 'https://fr.globalclimatestrike.net/?source=digitalstrikebanner',
@@ -17,7 +17,7 @@ const EARTH_DAY_LIVE_URLS = {
 
 const EARTH_DAY_LIVE_FULL_PAGE_URLS = {
   en: 'https://www.earthdaylive2020.org/?source=earthdaylivebanner',
-  // es: 'https://es.globalclimatestrike.net/digital-strike-day/?source=digitalstrikebanner',
+  es: 'https://www.earthdaylive2020.org/es/?source=earthdaylivebanner',
   // de: 'https://de.globalclimatestrike.net/digital-strike-day/?source=digitalstrikebanner',
   // cs: 'https://www.tydenproklima.cz',
   // fr: 'https://fr.globalclimatestrike.net/digital-strike-day/?source=digitalstrikebanner',

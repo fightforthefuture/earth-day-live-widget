@@ -1,20 +1,17 @@
 full_page:
   body: '
-      <span class="dcs-website-name__default">Nuestra</span>
-      <span class="dcs-website-name__prefix">La web de</span>
-      <span class="dcs-website-name"></span>
-      <span class="dcs-website-name__website">website</span>
-      se une<br />
-      al evento #ClimateStrike.<br />
-      ¿Quieres participar?'
-  ready:  'Quiero participar. ➔'
-  footer: 'Podrás volver a acceder a esta web a partir de mañana, <time id="dcs-tomorrow-date" datetime="2019-09-21">21 de Septiembre</time>.'
+      Nosotros estámos mirando
+      Día de la Tierra en vivo<br />
+      hoy.<br />
+      <span class="edl-link">¿Lo harás?</span>'
+  ready:  'Estoy listo/a ➔'
+  footer: 'Podrás acceder a este sitio web mañana, <time id="edl-tomorrow-date" datetime="2020-04-23">23 de abril</time>.'
 
 footer:
-  body: 'Nuestra web se unirá al evento global #ClimateStrike el próximo <time id="dcs-strike-date" datetime="2019-09-20">20 de September</time>. ¿Quieres participar?'
-  ready: 'Quiero participar. ➔'
+  body: 'Nuestro sitio web se unirá a Día de la Tierra en vivo el <time id="edl-strike-date" datetime="">20 de September</time>. <a class="edl-link">¿Lo harás?</a>'
+  ready: 'Sí, me apunto. ➔'
 
-title: 'Huelga digital por el clima'
-logo_alt: 'Logo del la huelga digital por el clima'
+title: 'Día de la Tierra en vivo'
+logo_alt: 'Día de la Tierra en vivo logo'
 close_overlay: 'Cerrar overlay'
 close_banner: 'Cerrar banner'

@@ -3,7 +3,7 @@ full_page:
       We&rsquo;re watching<br />
       Earth Day Live<br />
       today.<br />
-      <span class="edl-link">Will you?</span>'
+      <a class="edl-link">Will you?</a>'
   ready:  'I&rsquo;m ready ➔'
   footer: 'You’ll be able to access this website tomorrow, <time id="edl-tomorrow-date" datetime="2020-04-23">April 23</time>.'
 footer:

@@ -28,6 +28,26 @@ If you have any problems or questions regarding the widget, please [submit an is
 
 The widget is compatible with Firefox, Chrome (desktop and mobile), Safari (desktop and mobile), Microsoft Edge, and Internet Explorer 11.
 
+## How it works & Demo
+
+When you add [**widget.js**](https://github.com/fightforthefuture/earth-day-live-widget/blob/master/static/widget.js) to your site it will show a footer banner ([demo](https://widget.earthdaylive2020.org/demo.html)) informing visitors that your site is supporting Earth Day Live and directs them to join the event:
+
+![A screenshot of the Earth Day Live footer widget](https://www.earthdaylive2020.org/_nuxt/img/e8852c6.png)
+
+Then at midnight on April 22nd for 24 hours, the banner will expand to be full screen ([demo](https://widget.earthdaylive2020.org/demo.html?fullPage)), showing an unavoidable message that your site is joining Earth Day Live for the day, and directing them to join in the event:
+
+![A screenshot of the Earth Day Live full page widget](https://www.earthdaylive2020.org/_nuxt/img/7b18306.png)
+
+For those who cannot shut down their website for the day, a closable overlay option can also be configured ([demo](https://widget.earthdaylive2020.org/demo.html?fullPage&showCloseButton=1)):
+
+![A screenshot of the Earth Day Live full page widget with close button](https://www.earthdaylive2020.org/_nuxt/img/8fd5b76.png)
+
+You can demo the widget in different languages by adding a 'language' parameter to the URL. ([Example](https://assets.digitalclimatestrike.net/demo.html?fullPage&language=de)) 
+
+Please take a look at [**widget.js**](https://github.com/fightforthefuture/earth-day-live-widget/blob/master/static/widget.js) if you want to see exactly what you're embedding on your page.
+
+The widget is compatible with Firefox, Chrome (desktop and mobile), Safari (desktop and mobile), Microsoft Edge, and Internet Explorer 11.
+
 ## Customization options
 
 If you define an object called `EARTH_DAY_LIVE_OPTIONS` before including the widget code, you can pass some properties in to customize the default behavior.

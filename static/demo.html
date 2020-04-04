@@ -17,9 +17,7 @@
     var iframeHost = window.location.origin;
     var fullPage = window.location.toString().indexOf('fullPage') !== -1;
     var showCloseButton = window.location.toString().indexOf('showCloseButton') !== -1;
-
-    var urlParams = new URLSearchParams(window.location.search);
-    var language = urlParams.get('language') ? urlParams.get('language') : 'en';
+    var language = getUrlParameter('language') ? getUrlParameter('language') : 'en';
 
     var EARTH_DAY_LIVE_OPTIONS = {
       iframeHost: iframeHost,
@@ -29,6 +27,16 @@
       websiteName: 'Demo',
       language: language
     };
+
+    function getUrlParameter(name) {
+      var url = window.location.href;
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
   </script>
   <script src="widget.js"></script>
 </head>

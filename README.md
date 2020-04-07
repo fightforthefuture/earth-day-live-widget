@@ -65,6 +65,7 @@ If you define an object called `EARTH_DAY_LIVE_OPTIONS` before including the wid
     /**
      * Set the language of the widget. We currently support:
      * 'en': English
+     * 'es': Spanish
      * Defaults to null, which will obey the navigator.language setting of the 
      * viewer's browser.
      */

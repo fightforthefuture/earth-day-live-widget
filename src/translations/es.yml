@@ -8,7 +8,7 @@ full_page:
   footer: 'Podrás acceder a este sitio web mañana, <time id="edl-tomorrow-date" datetime="2020-04-23">23 de abril</time>.'
 
 footer:
-  body: 'Nuestro sitio web se unirá a Día de la Tierra en vivo el <time id="edl-strike-date" datetime="">20 de September</time>. <a class="edl-link">¿Lo harás?</a>'
+  body: 'Nuestro sitio web se unirá a Día de la Tierra en vivo el <time id="edl-strike-date" datetime="2020-04-23">20 de September</time>. <a class="edl-link">¿Lo harás?</a>'
   ready: 'Sí, me apunto. ➔'
 
 title: 'Día de la Tierra en vivo'

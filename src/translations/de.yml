@@ -1,0 +1,16 @@
+full_page:
+  body: '
+      We&rsquo;re watching<br />
+      Earth Day Live<br />
+      today.<br />
+      <a class="edl-link">Will you?</a>'
+  ready:  'I&rsquo;m ready ➔'
+  footer: 'You’ll be able to access this website tomorrow, <time id="edl-tomorrow-date" datetime="2020-04-23">April 23</time>.'
+footer:
+  body: 'Our website will join Earth Day Live on <time id="edl-strike-date" datetime="2020-04-22">April 22</time>. <a class="edl-link">Will you?</a>'
+  ready: 'Yes, I&rsquo;m in. ➔'
+
+title: 'Earth Day Live'
+logo_alt: 'Earth Day Live logo'
+close_overlay: 'Close overlay'
+close_banner: 'Close banner'

@@ -6,25 +6,12 @@ const GOOGLE_ANALYTICS_DELAY_MS = 30
 const EARTH_DAY_LIVE_URLS = {
   en: 'https://www.earthdaylive2020.org/?source=earthdaylivebanner',
   es: 'https://www.earthdaylive2020.org/es/?source=earthdaylivebanner',
-  // de: 'https://de.globalclimatestrike.net/?source=digitalstrikebanner',
-  // cs: 'https://www.tydenproklima.cz',
-  // fr: 'https://fr.globalclimatestrike.net/?source=digitalstrikebanner',
-  // nl: 'https://globalclimatestrike.net/?source=digitalstrikebanner',
-  // tr: 'https://sifirgelecek.org/',
-  // pt: 'https://pt.globalclimatestrike.net/?source=digitalstrikebanner',
-  // it: 'https://digital.globalclimatestrike.net/join/?source=digitalstrikebanner',
-}
-
-const EARTH_DAY_LIVE_FULL_PAGE_URLS = {
-  en: 'https://www.earthdaylive2020.org/?source=earthdaylivebanner',
-  es: 'https://www.earthdaylive2020.org/es/?source=earthdaylivebanner',
-  // de: 'https://de.globalclimatestrike.net/digital-strike-day/?source=digitalstrikebanner',
-  // cs: 'https://www.tydenproklima.cz',
-  // fr: 'https://fr.globalclimatestrike.net/digital-strike-day/?source=digitalstrikebanner',
-  // nl: 'https://globalclimatestrike.net/digital-strike-day/?source=digitalstrikebanner',
-  // tr: 'https://sifirgelecek.org',
-  // pt: 'https://pt.globalclimatestrike.net/digital-strike-day/?source=digitalstrikebanner',
-  // it: 'https://globalclimatestrike.net/digital-strike-day/?source=digitalstrikebanner',
+  // de: 'https://www.earthdaylive2020.org/de/?source=earthdaylivebanner',
+  // fr: 'https://www.earthdaylive2020.org/fr/?source=earthdaylivebanner',
+  // nl: 'https://www.earthdaylive2020.org/nl/?source=earthdaylivebanner',
+  // tr: 'https://www.earthdaylive2020.org/tr/?source=earthdaylivebanner',
+  // pt: 'https://www.earthdaylive2020.org/pt/?source=earthdaylivebanner',
+  // it: 'https://www.earthdaylive2020.org/it/?source=earthdaylivebanner',
 }
 
 const LOCALE_CODE_MAPPING = {
@@ -39,7 +26,6 @@ const LOCALE_CODE_MAPPING = {
   it: 'it-IT',
 }
 
-let joinUrls = null
 let isMaximizing = false
 let language = 'en'
 
@@ -106,13 +92,13 @@ function handleJoinEDLButtonClick(event) {
 
   //adding delay to allow google analytics call to complete
   setTimeout(() => {
-    postMessage('buttonClicked', { linkUrl: joinUrls[language] })
+    postMessage('buttonClicked', { linkUrl: EARTH_DAY_LIVE_URLS[language] })
   }, GOOGLE_ANALYTICS_DELAY_MS)
 }
 
 function setEarthDayLiveLinkUrl(selector) {
   const element = document.querySelector(selector)
-  element.setAttribute('href', joinUrls[language])
+  element.setAttribute('href', EARTH_DAY_LIVE_URLS[language])
 }
 
 function attachEvent(selector, event, callback) {
@@ -182,8 +168,6 @@ function initializeInterface() {
   const fullPageDisplayStartDate = new Date(Date.parse(query.fullPageDisplayStartDate))
   const fullPageDisplayStopDate = new Date(fullPageDisplayStartDate.getTime() + MS_PER_DAY)
   const isFullPage = query.forceFullPageWidget || todayIs(fullPageDisplayStartDate)
-
-  joinUrls = isFullPage ? EARTH_DAY_LIVE_FULL_PAGE_URLS : EARTH_DAY_LIVE_URLS
 
   setEarthDayLiveLinkUrl('.edl-footer .edl-link')
   setEarthDayLiveLinkUrl('.edl-footer .edl-link__icon')

@@ -72,8 +72,8 @@ If you define an object called `EARTH_DAY_LIVE_OPTIONS` before including the wid
      language: null, // @type {string}
      
      /**
-     * Allows you to set a partnerReferrer URL parameter in the link to earthdaylive2020.org. Use by Action Network
-     * forms on the website. 
+     * Allows you to set a &referrer= URL parameter in the link to earthdaylive2020.org. Use by Action Network
+     * forms on the earthdaylive2020.org website. 
      **/
      partnerReferrer: null, //@type {string}
     

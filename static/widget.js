@@ -9,6 +9,7 @@
   var options = window.EARTH_DAY_LIVE_OPTIONS || {}
   var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.earthdaylive2020.org'
   var websiteName = options.websiteName || null
+  var partnerReferrer = options.partnerReferrer || null
   var footerDisplayStartDate = options.footerDisplayStartDate || new Date(2019, 12, 1)       // January 1st, 2020 - arbitrary date in the past
   var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 3, 22)  // April 22nd, 2020
   var forceFullPageWidget = !!options.forceFullPageWidget
@@ -32,6 +33,7 @@
     showCloseButtonOnFullPageWidget && urlParams.push(['showCloseButtonOnFullPageWidget', 'true'])
     disableGoogleAnalytics && urlParams.push(['googleAnalytics', 'false'])
     websiteName && urlParams.push(['websiteName', encodeURI(websiteName)])
+    partnerReferrer && urlParams.push(['partnerReferrer', partnerReferrer])
 
     var params = urlParams.map(function(el) {
       return el.join('=')

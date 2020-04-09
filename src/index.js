@@ -163,11 +163,21 @@ function getFormattedDate(date, language) {
   return date.toLocaleDateString(LOCALE_CODE_MAPPING[language], { day: 'numeric', month: 'long' })
 }
 
+function appendPartnerReferrerToUrls(partnerReferrer) {
+  if (!partnerReferrer) return
+
+  for (let language in EARTH_DAY_LIVE_URLS) {
+    EARTH_DAY_LIVE_URLS[language] += '&referrer=' + partnerReferrer
+  }
+}
+
 function initializeInterface() {
   const query = parseQuery(location.search)
   const fullPageDisplayStartDate = new Date(Date.parse(query.fullPageDisplayStartDate))
   const fullPageDisplayStopDate = new Date(fullPageDisplayStartDate.getTime() + MS_PER_DAY)
   const isFullPage = query.forceFullPageWidget || todayIs(fullPageDisplayStartDate)
+
+  appendPartnerReferrerToUrls(query.partnerReferrer || null)
 
   setEarthDayLiveLinkUrl('.edl-footer .edl-link')
   setEarthDayLiveLinkUrl('.edl-footer .edl-link__icon')

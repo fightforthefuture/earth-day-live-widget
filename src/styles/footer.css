@@ -2,6 +2,7 @@
 
 .edl-footer {
   background: url('images/earth-day-live-gradient.jpg') no-repeat center bottom;
+  background-size: cover;
   bottom: 0;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
   font-family: titling-gothic-fb, sans-serif;

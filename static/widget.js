@@ -107,7 +107,8 @@
   }
 
   function closeWindow() {
-    document.getElementById(DOM_ID).remove()
+    var wrapper = document.getElementById(DOM_ID)
+    wrapper.parentNode.removeChild(wrapper)
     window.removeEventListener('message', receiveMessage)
     setCookie(CLOSED_COOKIE, 'true', cookieExpirationDays)
   }

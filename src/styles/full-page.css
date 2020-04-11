@@ -54,10 +54,13 @@
   margin: 2.25rem auto 0;
 }
 
-.edl-full-page__body p {
+.edl-full-page__body div {
   font: normal 2.2rem/3rem titling-gothic-fb, sans-serif;
 }
 
+.edl-full-page__body .edl-link__wrapper {
+  margin-left: 35px;
+}
 
 .edl-full-page__footer {
   bottom: 0;
@@ -96,7 +99,7 @@
 }
 
 @media (max-height: 600px) {
-  .edl-full-page__body p {
+  .edl-full-page__body div {
     font: normal 2.2rem/2.5rem titling-gothic-fb, sans-serif;
   }
 }

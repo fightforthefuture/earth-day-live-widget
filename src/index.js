@@ -179,11 +179,11 @@ function initializeInterface() {
 
   appendPartnerReferrerToUrls(query.partnerReferrer || null)
 
-  setEarthDayLiveLinkUrl('.edl-footer .edl-link')
-  setEarthDayLiveLinkUrl('.edl-footer .edl-link__icon')
+  setEarthDayLiveLinkUrl('.edl-footer .edl-link__wrapper .edl-link')
+  setEarthDayLiveLinkUrl('.edl-footer .edl-link__wrapper .edl-link__icon')
   setEarthDayLiveLinkUrl('.edl-footer__logo')
-  setEarthDayLiveLinkUrl('.edl-full-page .edl-link')
-  setEarthDayLiveLinkUrl('.edl-full-page .edl-link__icon')
+  setEarthDayLiveLinkUrl('.edl-full-page .edl-link__wrapper .edl-link')
+  setEarthDayLiveLinkUrl('.edl-full-page .edl-link__wrapper .edl-link__icon')
   setEarthDayLiveLinkUrl('.edl-full-page__logo')
   attachEvent('.edl-close', 'click', handleCloseButtonClick)
   attachEvent('.edl-link', 'click', handleJoinEDLButtonClick)

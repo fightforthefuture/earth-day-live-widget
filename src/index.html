@@ -25,12 +25,15 @@
             </a>
             {{#with full_page}}
             <div class="edl-full-page__body">
-              <p>
+              <div>
                 {{{ body }}}
-                <a class="edl-link__icon">
-                  <img class="edl-page__icon" src="images/circle-arrow.svg" alt="Arrow right icon" />
-                </a>
-              </p>
+                <div class="edl-link__wrapper">
+                  <a class="edl-link">{{ link_text }}</a>
+                  <a class="edl-link__icon">
+                    <img class="edl-page__icon" src="images/circle-arrow.svg" alt="Arrow right icon" />
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="edl-full-page__footer">
               <small>
@@ -53,12 +56,15 @@
         </a>
         <div class="edl-footer__main">
           {{#with footer}}
-          <p class="edl-footer__body">
+          <div class="edl-footer__body">
             {{{ body }}}
-            <a class="edl-link__icon">
-              <img class="edl-footer__icon" src="images/circle-arrow.svg" alt="Arrow right icon" />
-            </a>
-          </p>
+            <div class="edl-link__wrapper">
+              <a class="edl-link">{{ link_text }}</a>
+              <a class="edl-link__icon">
+                <img class="edl-footer__icon" src="images/circle-arrow.svg" alt="Arrow right icon" />
+              </a>
+            </div>
+          </div>
           {{/with}}
         </div>
         <div class="edl-footer__close">
